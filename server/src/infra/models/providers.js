@@ -1,8 +1,7 @@
-'use strict';
-
+const Sequelize = require('sequelize');
 module.exports = function (sequelize, DataTypes) {
-  const Buyer = sequelize.define(
-    'Buyer',
+  const Provider = sequelize.define(
+    'Provider',
     {
       id: {
         autoIncrement: true,
@@ -74,6 +73,22 @@ module.exports = function (sequelize, DataTypes) {
         type: DataTypes.STRING(255),
         allowNull: true,
       },
+      bank: {
+        type: DataTypes.STRING(255),
+        allowNull: true,
+      },
+      bankAgency: {
+        type: DataTypes.STRING(255),
+        allowNull: true,
+      },
+      account: {
+        type: DataTypes.STRING(255),
+        allowNull: true,
+      },
+      documents: {
+        type: DataTypes.STRING(255),
+        allowNull: true,
+      },
       phoneNumber: {
         type: DataTypes.STRING(255),
         allowNull: true,
@@ -94,11 +109,6 @@ module.exports = function (sequelize, DataTypes) {
           key: 'id',
         },
       },
-      confirm: {
-        type: DataTypes.BOOLEAN,
-        allowNull: true,
-        defaultValue: 1,
-      },
       email: {
         type: DataTypes.STRING(255),
         allowNull: true,
@@ -106,17 +116,17 @@ module.exports = function (sequelize, DataTypes) {
     },
     {
       sequelize,
-      tableName: 'buyers',
+      tableName: 'providers',
       timestamps: true,
     },
   );
 
-  Buyer.associate = (models) => {
-    Buyer.hasMany(models.Order, {
-      foreignKey: 'buyerId',
+  Provider.associate = (models) => {
+    Provider.hasMany(models.Order, {
+      foreignKey: 'providerId',
       as: 'orders',
     });
   };
 
-  return Buyer;
+  return Provider;
 };

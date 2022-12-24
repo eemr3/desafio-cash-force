@@ -49,22 +49,14 @@ module.exports = (sequelize, DataTypes) => {
       sequelize,
       tableName: 'users',
       timestamps: true,
-      indexes: [
-        {
-          name: 'PRIMARY',
-          unique: true,
-          using: 'BTREE',
-          fields: [{ name: 'id' }],
-        },
-        {
-          name: 'email',
-          unique: true,
-          using: 'BTREE',
-          fields: [{ name: 'email' }],
-        },
-      ],
     },
   );
 
+  User.associate = (models) => {
+    User.hasMany(models.Order, {
+      foreignKey: 'userId',
+      as: 'orders',
+    });
+  };
   return User;
 };
