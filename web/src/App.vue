@@ -1,6 +1,6 @@
 <template>
-  <SideBarVue />
-  <ContentVue />
+  <side-bar-vue />
+  <content-vue />
 </template>
 
 <script>
