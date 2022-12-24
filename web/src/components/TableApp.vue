@@ -1,10 +1,10 @@
 <template>
   <div data-testid="table-article">
-    <div className="lg:w-11/12">
-      <div className="w-full">
-        <div className="lg:max-w-full m-0 overflow-x-auto">
-          <table className="m-0 table-auto w-full">
-            <thead class="uppercase bg-[#ffffff]  text-[#A1A8B8] text-left text-xs">
+    <div class="lg:w-11/12">
+      <div class="w-full">
+        <div class="lg:max-w-full m-0 overflow-x-auto">
+          <table class="border-separate border-spacing-y-3">
+            <thead class="uppercase bg-[#ffffff]  text-[#A1A8B8] text-left text-xs border">
               <tr>
                 <th class="w-1/6 min-w-[160px] font-semibold py-3 lg:py-4 
                 border-l border-transparent">
@@ -26,15 +26,24 @@
                   status</th>
               </tr>
             </thead>
-            <tbody>
-              <tr v-for="user in users" :key="user.id">
-                <td class="uppercase text-[#A1A8B8] text-sm">{{ user.firstName }} {{ user.lastName }}</td>
-                <td class="uppercase text-[#A1A8B8] text-sm">{{ user.email }}</td>
-                <td class="uppercase text-[#A1A8B8] text-sm">{{ user.role }}</td>
-                <td class="uppercase text-[#A1A8B8] text-sm">{{ user.role }}</td>
-                <td class="uppercase text-[#00AD8C] text-sm">{{ user.role }}</td>
-                <td class="uppercase text-[#00AD8C] text-sm">{{ user.role }}</td>
-                <td><button class="w-[165px] h-[32px] rounded-[24px] border-[1px] text-xs
+            <tbody class="bg-[#fefefe]">
+              <tr class="h-12" v-for=" user in users" :key="user.id">
+                <td class="uppercase border-b border-t border-l rounded border-[#DFE2EB] px-2 text-[#A1A8B8] text-sm">{{
+                    user.firstName
+                }} {{
+    user.lastName
+}}</td>
+                <td class="uppercase border-b border-t border-[#DFE2EB] px-2 text-[#A1A8B8] text-sm">{{ user.email }}
+                </td>
+                <td class="uppercase border-b border-t border-[#DFE2EB] px-2 text-[#A1A8B8] text-sm">{{ user.role }}
+                </td>
+                <td class="uppercase border-b border-t border-[#DFE2EB] px-2 text-[#A1A8B8] text-sm">{{ user.role }}
+                </td>
+                <td class="uppercase border-b border-t border-[#DFE2EB] px-2 text-[#00AD8C] text-sm">{{ user.role }}
+                </td>
+                <td class="uppercase border-b border-t border-[#DFE2EB] px-2 text-[#00AD8C] text-sm">{{ user.role }}
+                </td>
+                <td class="border-b border-t border-r rounded border-[#DFE2EB] px-2"><button class="w-[165px] h-[32px] rounded-[24px] border-[1px] text-xs
              border-[#CAD3FF] text-[#727D94]">Dados do
                     cedente</button>
                 </td>
@@ -63,3 +72,11 @@ export default {
   }
 };
 </script>
+
+<style>
+.gfg {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+
+}
+</style>
