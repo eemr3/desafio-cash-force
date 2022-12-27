@@ -1,7 +1,7 @@
 <template>
   <div class="w-[288px] h-screen bg-[#FBFDFE] px-3">
-    <LogoApp img="logo.svg" />
-    <NavLink img="icons-nfs.svg" />
+    <logo-app img="logo.svg" />
+    <nav-link img="icons-nfs.svg" />
   </div>
 </template>
 <script>

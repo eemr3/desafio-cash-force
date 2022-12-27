@@ -33,5 +33,12 @@ module.exports = function (sequelize, DataTypes) {
     });
   };
 
+  Cnpj.associate = (models) => {
+    Cnpj.hasMany(models.Provider, {
+      foreignKey: 'cnpjId',
+      as: 'providers',
+    });
+  };
+
   return Cnpj;
 };

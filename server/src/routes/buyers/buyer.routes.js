@@ -1,8 +1,8 @@
 const express = require('express');
 const BuyerController = require('../../controllers/buyer.controller');
 
-const reoute = express.Router();
+const router = express.Router();
 
-reoute.get('/', BuyerController.findAllBuyer);
+router.get('/', BuyerController.findAllBuyer);
 
-module.exports = reoute;
+module.exports = router;

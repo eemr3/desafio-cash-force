@@ -1,8 +1,8 @@
 const express = require('express');
 const OrderController = require('../../controllers/order.controller');
 
-const reoute = express.Router();
+const router = express.Router();
 
-reoute.get('/', OrderController.findAllOrder);
+router.get('/', OrderController.findAllOrder);
 
-module.exports = reoute;
+module.exports = router;
