@@ -1,0 +1,20 @@
+{
+  "name": "cash-force",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sql": "./server/upSql.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eemr3/desafio-cash-force.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eemr3/desafio-cash-force/issues"
+  },
+  "homepage": "https://github.com/eemr3/desafio-cash-force#readme"
+}
