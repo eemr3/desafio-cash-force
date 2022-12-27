@@ -1,8 +1,8 @@
 const express = require('express');
 const UserController = require('../../controllers/user.controller');
 
-const reoute = express.Router();
+const router = express.Router();
 
-reoute.get('/', UserController.findAllUsers);
+router.get('/', UserController.findAllUsers);
 
-module.exports = reoute;
+module.exports = router;

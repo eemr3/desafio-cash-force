@@ -1,7 +1,7 @@
 require('express-async-errors');
 require('dotenv').config();
-const { handleErrors } = require('../middlewares/handle-errors');
 
+const { handleErrors } = require('../middlewares/handle-errors');
 const { app } = require('./api');
 
 const port = process.env.API_PORT || 3333;

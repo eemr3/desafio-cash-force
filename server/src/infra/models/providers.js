@@ -128,5 +128,12 @@ module.exports = function (sequelize, DataTypes) {
     });
   };
 
+  Provider.associate = (models) => {
+    Provider.belongsTo(models.Cnpj, {
+      foreignKey: 'cnpjId',
+      as: 'cnpjs',
+    });
+  };
+
   return Provider;
 };
