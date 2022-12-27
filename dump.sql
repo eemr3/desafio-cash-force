@@ -1,12 +1,6 @@
--- Active: 1670861400333@@127.0.0.1@3306
+-- Active: 1672171190006@@127.0.0.1@3306@cashforce_v3
 
--- Banco de dados: `cashforce_v3`
-
---
-
--- --------------------------------------------------------
-
-CREATE DATABASE `cashforce_v3` DEFAULT CHARACTER SET = 'utf8mb4';
+-- CREATE DATABASE `cashforce_v3` DEFAULT CHARACTER SET = 'utf8mb4';
 
 --
 
