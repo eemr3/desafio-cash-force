@@ -4,7 +4,7 @@
       class="fixed z-40 top-0 left-0 w-full h-full bg-opacity-50 bg-gray-900 transition ease-in duration-300">
       <div class="flex justify-center items-center h-screen">
         <div class="w-[900px]  py-5 px-[30px] bg-white rounded-[2px]">
-          <div class="text-[#42b983] mb-4 bg-[#FBFDFE] border-b h-10 font-bold">
+          <div class="text-[#42b983] text-2xl mb-4 bg-[#FBFDFE] border-b h-10 font-bold">
             <slot name="header">Dados do cedente</slot>
           </div>
 
