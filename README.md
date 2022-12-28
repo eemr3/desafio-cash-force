@@ -37,7 +37,7 @@ Para rodar esse projeto, você vai precisar seguir as intruções abaixo:
 ### Entre na pasta `server`:
 
 ```bash
-cd desafio-cash-force/server
+cd server
 ```
 
 - Dentro da pasta `server` renomei o arquivo `.env.exemple` para `.env`, ele contem os valores para a configuração do banco de dados.
