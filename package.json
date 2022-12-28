@@ -1,0 +1,24 @@
+{
+  "name": "cash-force",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "(cd back-end && npm install); (cd front-end && npm install)",
+    "install:apps": "(cd back-end && npm install); (cd front-end && npm install)",
+    "compose:up": "docker-compose up -d",
+    "compose:down": "docker-compose down",
+    "database": "npx sequelize db:migrate && npx sequelize db:seed:all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eemr3/desafio-cash-force.git"
+  },
+  "keywords": [],
+  "author": "Emerson Moreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eemr3/desafio-cash-force/issues"
+  },
+  "homepage": "https://github.com/eemr3/desafio-cash-force#readme"
+}
