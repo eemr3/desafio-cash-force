@@ -61,7 +61,7 @@ npm run compose:up
 
 ```
 
-Para criar as tabelas e popular as mesmas:
+Aguarde um instante até o container está de pé e a conexão com BD está pronta e use o comando abaixo para criar as tabelas e popular as mesmas:
 
 ```bash
 npm run database
