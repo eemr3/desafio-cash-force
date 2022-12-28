@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[255px] h-[53px] mt-8">
+  <div class="w-[255px] h-[53px] mt-9">
     <div class="flex gap-2 items-center">
       <img class="w-[24px] h-[24px]" :src="require(`@/assets/${icon}`)">
       <h3 class="text-2xl font-bold text-[#021B51]">{{ title }}</h3>
