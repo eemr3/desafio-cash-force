@@ -6,6 +6,9 @@ module.exports = {
       borderSpacing: {
         13: '0 10px',
       },
+      fontFamily: {
+        display: ['DM Sans'],
+      },
     },
   },
   variants: {
