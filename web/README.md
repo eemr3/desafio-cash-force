@@ -13,7 +13,6 @@ Requisitos minimo para rodar o back-end da aplicação:
 - vueJs 3
 - axios
 - tailwindcss
-- sequelize
 
 ## Configuração do projeto
 
