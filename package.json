@@ -8,7 +8,7 @@
     "install:apps": "(cd server && npm install); (cd web && npm install)",
     "compose:up": "docker-compose up -d",
     "compose:down": "docker-compose down",
-    "database": "npx sequelize db:migrate && npx sequelize db:seed:all"
+    "database": "(cd server && npx sequelize-cli db:migrate); (cd server && npx sequelize-cli db:seed:all)"
   },
   "repository": {
     "type": "git",
