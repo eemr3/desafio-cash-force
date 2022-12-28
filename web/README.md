@@ -14,10 +14,6 @@ Requisitos minimo para rodar o back-end da aplicação:
 - axios
 - tailwindcss
 - sequelize
-- mysql2
-- nodemon
-- cors
-- express-async-errors
 
 ## Configuração do projeto
 
