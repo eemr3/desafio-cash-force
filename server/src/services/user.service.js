@@ -1,7 +1,9 @@
 const { User } = require('../infra/models');
 
 const findAllUsers = async () => {
-  return await User.findAll();
+  const users = await User.findAll();
+
+  return users;
 };
 
 module.exports = {

@@ -81,6 +81,12 @@ Para rodar o back-end digite o comando:
 npm run dev
 ```
 
+Para rodar o test das services do back-end:
+
+```bash
+  npm test
+```
+
 ## Subir o App Web
 
 ## Entre no diretório do `web`

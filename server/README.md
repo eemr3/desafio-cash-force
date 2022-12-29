@@ -202,6 +202,12 @@ Inicie o servidor
   npm run dev
 ```
 
+## Rodando os tests
+
+```bash
+  npm test
+```
+
 ## Autor
 
 - [@eemr3](https://www.github.com/eemr3)

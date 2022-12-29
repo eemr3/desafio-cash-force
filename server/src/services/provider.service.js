@@ -1,6 +1,6 @@
 const { Provider, Cnpj } = require('../infra/models');
 
-const findPrivderById = async (id) => {
+const findProviderById = async (id) => {
   const provider = await Provider.findOne({
     where: {
       id,
@@ -21,5 +21,5 @@ const findPrivderById = async (id) => {
 };
 
 module.exports = {
-  findPrivderById,
+  findProviderById,
 };
