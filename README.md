@@ -97,6 +97,12 @@ npm run serve
 
 Obs: O back-end deve estar rodando para o front-end funcionar!
 
+A aplicação Web funciona no endereço:
+
+```bash
+http://localhost:8080
+```
+
 ## Informção do Front-end da aplicação
 
 - [Front-End](https://github.com/eemr3/desafio-cash-force/tree/main/web)
